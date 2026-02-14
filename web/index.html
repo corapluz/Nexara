@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexara - Advanced Roblox Utility</title>
+    <meta name="description" content="Nexara is a powerful desktop utility for Roblox with FastFlag editing, multi-instance support, and advanced customization.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Mouse follower glow -->
+    <div class="mouse-glow"></div>
+    
+    <!-- Animated background -->
+    <div class="bg-gradient"></div>
+    <div class="bg-glow"></div>
+    <div class="bg-glow-2"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="grid-overlay"></div>
+    
+    <!-- Floating shapes -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>Nexara</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="https://github.com/corapluz/Nexara" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>v1.0.0 • Latest Release</span>
+            </div>
+            <h1 class="hero-title">
+                Advanced Roblox<br>
+                <span class="gradient-text">Utility Tool</span>
+            </h1>
+            <p class="hero-description">
+                Powerful FastFlag editor, multi-instance support, and advanced customization for Roblox on Windows.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://github.com/corapluz/Nexara/releases/latest/download/Nexara.Setup.exe" class="btn btn-primary" id="downloadBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Setup
+                    <span class="btn-shine"></span>
+                </a>
+                <a href="https://github.com/corapluz/Nexara" class="btn btn-secondary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    View Source
+                </a>
+            </div>
+            
+            <!-- Requirements Notice -->
+            <div class="hero-requirements">
+                <div class="requirement-notice">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9998 9.00023V13.0002M11.9998 17.0002H12.0098M10.6151 3.89195L2.39019 18.0986C1.93398 18.8866 1.70588 19.2806 1.73959 19.6039C1.769 19.886 1.91677 20.1423 2.14613 20.309C2.40908 20.5002 2.86435 20.5002 3.77487 20.5002H20.2246C21.1352 20.5002 21.5904 20.5002 21.8534 20.309C22.0827 20.1423 22.2305 19.886 22.2599 19.6039C22.2936 19.2806 22.0655 18.8866 21.6093 18.0986L13.3844 3.89195C12.9299 3.10679 12.7026 2.71421 12.4061 2.58235C12.1474 2.46734 11.8521 2.46734 11.5935 2.58235C11.2969 2.71421 11.0696 3.10679 10.6151 3.89195Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Requires <strong>.NET 8.0 Desktop Runtime</strong> — </span>
+                    <a href="https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.11/windowsdesktop-runtime-8.0.11-win-x64.exe" class="requirement-link">
+                        Download here
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-icon">
+                        <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                            <g transform="matrix(0.83 0 0 0.83 12 12)">
+                                <path style="fill: currentColor;" transform="translate(-12, -12)" d="M 12 3 L 10 21 L 12 21 L 14 3 L 12 3 z M 5.7070312 6.2929688 L 0 12 L 5.7070312 17.707031 L 7.1210938 16.292969 L 2.828125 12 L 7.1210938 7.7070312 L 5.7070312 6.2929688 z M 18.292969 6.2929688 L 16.878906 7.7070312 L 21.171875 12 L 16.878906 16.292969 L 18.292969 17.707031 L 24 12 L 18.292969 6.2929688 z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="stat-value">1.0.0</div>
+                    <div class="stat-label">Version</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-icon">
+                        <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                            <g transform="matrix(0.83 0 0 0.83 12 12)">
+                                <g transform="matrix(1 0 0 1 0 9)">
+                                    <polygon style="stroke: currentColor; stroke-width: 1.5; fill: none;" points="3.75,2.25 -3.75,2.25 -3,-2.25 3,-2.25 3.75,2.25" />
+                                </g>
+                                <g transform="matrix(1 0 0 1 0 11.25)">
+                                    <line style="stroke: currentColor; stroke-width: 1.5; fill: none;" x1="-6" y1="0" x2="6" y2="0" />
+                                </g>
+                                <g transform="matrix(1 0 0 1 0 2.75)">
+                                    <line style="stroke: currentColor; stroke-width: 1.5; fill: none;" x1="-11.25" y1="0" x2="11.25" y2="0" />
+                                </g>
+                                <g transform="matrix(1 0 0 1 0 -2.25)">
+                                    <rect style="stroke: currentColor; stroke-width: 1.5; fill: none;" x="-11.25" y="-9" rx="3" ry="3" width="22.5" height="18" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="stat-value">Windows</div>
+                    <div class="stat-label">Platform</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated circles decoration -->
+        <div class="hero-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need for advanced Roblox customization</p>
+        </div>
+        
+        <!-- Screenshot showcase (optional - will be added if you provide screenshot) -->
+        <div class="screenshot-showcase" id="screenshotShowcase" style="display: none;">
+            <div class="screenshot-container">
+                <div class="screenshot-frame">
+                    <img src="nexara-screenshot.png" alt="Nexara Interface" class="screenshot-img">
+                    <div class="screenshot-glow"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 2v11h3v9l7-12h-4l4-8z"/>
+                    </svg>
+                </div>
+                <h3 class="feature-title">FastFlag Editor</h3>
+                <p class="feature-description">Edit and manage custom FastFlags in Roblox with real-time updates and persistence across sessions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Multi-Instance</h3>
+                <p class="feature-description">Run multiple Roblox instances simultaneously with mutex bypass and per-PID monitoring.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path d="M12 1v6m0 6v6m5.2-13.2l-4.2 4.2m0 6l4.2 4.2M23 12h-6m-6 0H1m18.2 5.2l-4.2-4.2m0-6l4.2-4.2"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">FPS Unlock</h3>
+                <p class="feature-description">Unlock frame rate limits with dynamic patching for smooth, high-performance gameplay.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Bootstrapper</h3>
+                <p class="feature-description">Integrated Roblox installer with automatic updates and version management.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                        <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Theme System</h3>
+                <p class="feature-description">Customizable themes with chroma colors, glass effects, and animated backgrounds.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                </div>
+                <h3 class="feature-title">Real-time Logs</h3>
+                <p class="feature-description">Monitor Roblox activity with per-client log tracking and userid extraction.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="download-card">
+            <div class="download-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+            </div>
+            <h2 class="download-title">Ready to get started?</h2>
+            <p class="download-description">Download Nexara Setup and start customizing your Roblox experience.</p>
+            
+            <div class="download-buttons">
+                <a href="https://github.com/corapluz/Nexara/releases/latest/download/Nexara.Setup.exe" class="btn btn-primary btn-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download Nexara Setup
+                </a>
+                <a href="https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.11/windowsdesktop-runtime-8.0.11-win-x64.exe" class="btn btn-secondary btn-large">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    Download .NET 8.0 Desktop Runtime
+                </a>
+            </div>
+            
+            <div class="download-info">
+                <div class="download-info-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Windows 10/11 (64-bit)</span>
+                </div>
+                <div class="download-info-item download-info-highlight">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>.NET 8.0 Desktop Runtime Required</span>
+                </div>
+                <div class="download-info-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>~1MB Setup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <span>Nexara</span>
+                </div>
+                <p class="footer-description">Advanced Roblox utility tool for Windows</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#download">Download</a>
+                    <a href="https://github.com/corapluz/Nexara/releases" target="_blank">Releases</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <a href="https://github.com/corapluz/Nexara" target="_blank">GitHub</a>
+                    <a href="https://github.com/corapluz/Nexara/issues" target="_blank">Issues</a>
+                    <a href="https://github.com/corapluz/Nexara/blob/main/LICENSE" target="_blank">License</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Nexara. Open source under MIT License.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
