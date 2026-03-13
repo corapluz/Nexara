@@ -10,15 +10,15 @@
 - [NET 8.0 Desktop Runtime](https://builds.dotnet.microsoft.com/dotnet/WindowsDesktop/8.0.11/windowsdesktop-runtime-8.0.11-win-x64.exe)
 
 # What is Nexara
-- Nexara is a utility tool for Roblox. it's a bootstrapper for Roblox.
+- it's a bootstrapper for Roblox.
 - The app might have some bugs/broken stuff but i will fix them in the future so yeah.
 
 # What does it do?
 - Nexara has some settings like fflag injector via memory.
-- It has a client monitor (if you open more than 1 clients, Nexara monitors it too.)
+- Client Monitor
 - Multi Instance toggle and the Fps unlocker (unlocking the 240 fps limit)
-- Inject/Uninject feature (inject or revert fflags)
-- Auto Inject feature (when Roblox starts, your fflags on the list will be auto injected into the client)
+- Inject/Uninject feature (for fflags)
+- Auto Inject feature
 - Preset theme chooser
 - Background changer (it supports images, gifs and image/gif URLs)
 
