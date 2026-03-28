@@ -3,7 +3,7 @@
 - Releases: https://github.com/corapluz/Nexara/releases/
 
 # Installation:
-- Download [Nexara.Setup.exe](https://github.com/corapluz/Nexara/releases/latest/download/Nexara.Setup.exe) from releases or download it from the [website](https://corapluz.github.io/Nexara/).
+- Download [NexaraSetup.exe](https://github.com/corapluz/Nexara-Setup/releases/download/1.1/NexaraSetup.exe) from releases or download it from the [website](https://corapluz.github.io/Nexara/).
 
 # Requirements:
 - Platform > Windows 10/11
